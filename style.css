@@ -1,6 +1,4 @@
-/* El "*" es una seleccion a todos los elementos html, con transition estoy especificando cuanto quiero
-que tarde los cambios en notarse. 
-Por ejemplo: los enlaces tardaran o.6 segundos (lento) en cambiar el color cuando pongo el mosue sobre ellos*/
+
 
 *{
 
@@ -8,9 +6,7 @@ Por ejemplo: los enlaces tardaran o.6 segundos (lento) en cambiar el color cuand
     
 }
 
-/* En esta parte seleccion al elemento base html; le digo que ocupe toda la pantalla (margin: 0), le digo que el fondo sera 
-de tal color (backgorund-color), especifico el color de la letra, y le digo que quiero que oculte la barra deslizante horizontal
-(overflow-x: hidden) y que solo otorgue la barra deslizante vertical (overflow-y). */
+
 
 html{
 
@@ -25,7 +21,7 @@ overflow-x: hidden;
 overflow-y: scroll;
 }
 
-/* Aca edito la barra de scroll le digo que tenga un ancho de 1vh. */
+
 
 html::-webkit-scrollbar{
 
@@ -33,8 +29,7 @@ html::-webkit-scrollbar{
 
 }
 
-/* edito unicamente el indicador de posicion del scroll le doy un color de fondo, y le doy un borde redondeado 
-(border-radius: 12px) */
+
 
 html::-webkit-scrollbar-thumb{
 
@@ -44,8 +39,7 @@ html::-webkit-scrollbar-thumb{
    
    }
    
-/*llamo a la etiqueta section y le digo que se haga mas grande cada que agrego un elemento ocupando el espacio necesario 
-(height: max-content) y le digo que ocupe todo el ancho de la pantalla (width: 100%)*/
+
 
 section{
 
@@ -53,18 +47,7 @@ section{
     width: 100%;
 }
 
-/* Llamo a la clase que le asigne al titulo y lo centro, especifico su tamaÃ±o le digo que a su alrededor mantenga un espacio
-del 2% con respecto al resto de elementos, vuelvo el texto transparente y le digo que en abajo en vez de 2% de separacion
-solo separe 8px.
 
-el "-webkit-text-stroke: 1px #fff" dicta lo siguiente contornea todo el borde de las letras con un grosor de 1px el contorno
-y deja ese borde de color blanco, y con el "text-shadow" trato de darle un efecto luminicente (como neon);
-los valores son asi el primer valor "text-shadow: 2px" este primer valor dice que la sombra se bajara hacia abajo 2px,
-el segundo valor "text-shadow: 2px 2px" le dice cuanto se movera la sombra hacia la derecha
-y el tercer valor "text-shadow: 2px 2px 15px" le dice cuanta nitidez tendra la sombra, si el valor es mas bajo la sombra sera 
-mas blanca fuerte, y si el valor es mas alto la sombra sera mas borrosa y con mayor rango
-el ultimo valor indica el color de la sombra.
-*/
 
 .title_section{
 
@@ -83,9 +66,7 @@ margin-bottom: 8px;
 text-shadow: 2px 2px 15px #a558b7;
 }
 
-/* LLamo a la clase que le di al subtitulo (mi nombre) y le marco lo mismo que al titulo con diferencia que doy un espacio 
-mas ancho entre letras (letter-spacing: 1.5px) le digo que entre letra y letra deje 1.5px de espacio y le digo que el color sea
-un poco mas oscuro para no robarle protagonismo al titulo.*/
+
 
 .subtitle_section{
 
@@ -102,22 +83,7 @@ font-size: 2.5vh;
 text-shadow: 2px 2px 15px #a558b7;
 }
 
-/* La clase container se la asigne al div que va a contener todos los trabajos le especifico que se separe un 5% de los bordes
-de la pantalla (margin: 5%) y le digo que ocupe un 88% del total de la pantalla pq eso? pq esto se suma, la pantalla tiene 
-un 100% de espacio a lo ancho (width) y a lo alto (height) entonces yo al decirle que se separe un 5% de los bordes de la 
-pantalla estoy ya ocupando un 10% del ancho de la pantalla (5% a la izquierda y otros 5% a la derecha 10 en total) y si a eso
-le sumo el ancho del elemento div (de clase container) que le digo que ocupe un 88% de la pantalla se suma con el espacio que se
-separa de los bordes osea los 10% de separacion de los bordes de la pantalla mas los 88% de ancho del div, da 98% del total de
-la pantalla y que pasa con el otro 2% restante? cuando le indico al div que a todos los elementos que contiene dentro los 
-separe de sus bordes un 1% lo hace de ambos lados entonces de 88% pasa a medir un 90% dando al final el 100% de la pantalla
-y quedando centrado el div que contiene los trabajos.
 
-hay una manera de evitar todo este calculo pero me la acorde tarde y ya me dio fiaca cambiarle, si en el general osea dentro
-de las llaves del "*" le digo que todos los elementos tengan la propiedad "box-sizing: border-box" marco que todos van a
-ocupar solo el espacio que digo y no mayor a eso, me olvide de eso y ya si lo ponia tenia que editar el codigo y me dio fiaca
-
-ya el "box-shadow" lo use para dar el efecto tarjeta al div asi no queda tan liso funciona de la misma forma que el "text-shadow"
-la posicion de los valores modifica lo mismo.*/
 
 .container{
 
@@ -131,11 +97,7 @@ la posicion de los valores modifica lo mismo.*/
 
 }
 
-/* la clase list se la asigne a los div que contiene los titulos y enlace de los trabajos, redondee las puntas con el 
-"border-radius" y especifique que se saparen entre ellos 6px de arriba y de abajo pero no se separen de los costados,
-con el "box-shadow" ya dije para que es da sombra, pero si antes de asignar los valores pongo el valor "inset" en vez de la
-sombra salir hacia afuera, va hacia adentro del div dando ese efecto de profundidad, y si copio y pego los valores
-separandolos con una "," puedo ir jugando con el sombreado.*/
+
 
 .list{
 
@@ -145,8 +107,7 @@ separandolos con una "," puedo ir jugando con el sombreado.*/
     padding: 4px;
 }
 
-/* la clase trabajo se la di a los titulos de los trabajos, exactamente igual que la clase del titulo solo que le indico
-sea mas pequeÃ±o (font-size) */
+
 
 .trabajo{
 
@@ -160,8 +121,7 @@ sea mas pequeÃ±o (font-size) */
 
 }
 
-/* enlace se lo asigne a la etiqueta <a> de html, el "text-decoration: none" marca que no quiero que me subraye el texto
-y el resto funciona igual que las anteriores especificaciones en las clases titulo, trabajo, etc. */
+
 
 .enlace{
 
@@ -175,9 +135,7 @@ y el resto funciona igual que las anteriores especificaciones en las clases titu
 
 }
 
-/* El ":hover" despues de el nombre de la clase enlace sirve para decirle que hacer cuando el mouse se pone sobre el texto
-enlace (solo funciona en pc ojo) lo que le digo que haga es que simplemente cambie el color del texto de un blanco (#fff) a
-un celeste (#0bc6ab). */
+
 
 .enlace:hover{
 
@@ -192,7 +150,7 @@ un celeste (#0bc6ab). */
 
 backdrop-filter: blur(41px);
 
-/* backface-visibility: hidden; */
+
 
 background: transparent;
 }
