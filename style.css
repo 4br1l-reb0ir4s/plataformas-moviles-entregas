@@ -1,0 +1,156 @@
+
+
+*{
+
+    transition: .6s;
+    
+}
+
+
+
+html{
+
+margin: 0;
+
+background-color: #000;
+
+color: #22191b;
+
+overflow-x: hidden;
+
+overflow-y: scroll;
+}
+
+
+
+html::-webkit-scrollbar{
+
+ width: 1vh;
+
+}
+
+
+
+html::-webkit-scrollbar-thumb{
+
+    background-color: #2c3137;
+    border-radius: 12px;
+
+   
+   }
+   
+
+
+section{
+
+    height: max-content;
+    width: 100%;
+}
+
+
+
+.title_section{
+
+text-align: center;
+
+font-size: 9vh;
+
+margin: 2%;
+
+color: transparent;
+
+margin-bottom: 8px;
+
+-webkit-text-stroke: 1px #a558b7;
+
+text-shadow: 2px 2px 15px #a558b7;
+}
+
+
+
+.subtitle_section{
+
+text-align: center;
+
+color: transparent;
+
+letter-spacing: 1.5px;
+
+font-size: 2.5vh;
+
+-webkit-text-stroke: .8px #522b5b;
+
+text-shadow: 2px 2px 15px #a558b7;
+}
+
+
+
+.container{
+
+    background-color: #c35155;
+    margin: 5%;
+    width: 88%;
+    padding: 2px 1%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 2px 21px #000000cb;
+
+}
+
+
+
+.list{
+
+    border-radius: 10px;
+    margin: 6px 0px;
+    box-shadow: inset 2px 1px 12px #22191b,inset 2px 1px 4px #22191b;
+    padding: 4px;
+}
+
+
+
+.trabajo{
+
+    text-align: center;
+    font-size: 4vh;
+    margin: 1%;
+    color: transparent;
+    margin-bottom: 8px;
+    -webkit-text-stroke: 1px #fff;
+    text-shadow: 2px 2px 15px #fff;
+
+}
+
+
+
+.enlace{
+
+    text-decoration: none;
+    font-size: 3.5vh;
+    margin: 2%;
+    color: transparent;
+    margin-bottom: 8px;
+    -webkit-text-stroke: 1px #65575b;
+    text-shadow: 2px 2px 15px #65575b;
+
+}
+
+
+
+.enlace:hover{
+
+    color: transparent;
+    margin-bottom: 8px;
+    -webkit-text-stroke: 1px #e39a9e;
+    text-shadow: 2px 2px 15px #0bc6ab;
+
+}
+
+.container, .list{
+
+backdrop-filter: blur(41px);
+
+
+
+background: transparent;
+}
